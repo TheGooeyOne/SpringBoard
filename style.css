@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+h1 {
+    margin-top: 0;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #555;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.skills {
+    font-weight: bold;
+}
+
+.objective {
+    font-style: italic;
+    color: #666;
+}
+
+.section-title {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    text-align: center;
+    color: #777;
+}
+
+/* Additional Styling */
+.container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+h3 {
+    color: #777;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.skills {
+    color: #007bff;
+}
+
+.objective {
+    color: #6c757d;
+}
+
+.section-title {
+    color: #333;
+}
+
+.footer {
+    color: #999;
+}
+/* Scale Animation */
+.skills {
+    transform: scale(0);
+    opacity: 0;
+    animation: scaleIn 0.5s ease forwards;
+}
+
+@keyframes scaleIn {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Bounce Animation */
+/*.skills {
+    transform: translateY(20px);
+    opacity: 0;
+    animation: bounceIn 0.5s ease forwards;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Typewriter Animation */
+/*.skills {
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 2s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: auto;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
