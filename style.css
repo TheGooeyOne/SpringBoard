@@ -11,15 +11,13 @@ body {
     max-width: 800px;
     margin: auto;
     background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 20rem;
+    border-radius: 10rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 h1, h2, h3 {
-    color: #333;
+    text-align: center;
 }
-
 h1 {
     margin-top: 0;
     border-bottom: 2px solid #333;
@@ -97,9 +95,6 @@ ul {
     color: #333;
 }
 
-.footer {
-    color: #999;
-}
 /* Scale Animation */
 .skills {
     transform: scale(0);
@@ -113,53 +108,48 @@ ul {
         opacity: 1;
     }
 }
-
-/* Bounce Animation */
-/*.skills {
-    transform: translateY(20px);
-    opacity: 0;
-    animation: bounceIn 0.5s ease forwards;
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-@keyframes bounceIn {
-    0% {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    50% {
-        transform: translateY(0);
-        opacity: 0.7;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.objective {
+    text-align: justify;
+}
+.section-title {
+    margin-top: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+.section-title h3 {
+    color: #007bff;
+    font-size: 1.2em;
+}
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.footer {
+    margin-top: 50px;
+    text-align: center;
+}
+.footer p {
+    font-style: italic;
+    color: #777;
+}
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
 
-/* Typewriter Animation */
-/*.skills {
-    overflow: hidden;
-    border-right: 0.15em solid orange;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: 0.15em;
-    animation: typing 2s steps(30, end), blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: auto;
-    }
-}
-
-@keyframes blink-caret {
-    from, to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: orange;
-    }
-}
