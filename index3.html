@@ -3,26 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
     <title>Ethan Bennett - CV</title>
-
 </head>
 <body>
+    <header>
+        <h1>Ethan Bennett - CV Version 3</h1>
+        <nav>
+            <ul>
+                <li><a href="#professional-experience">Professional Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="index4.html">Springboard CV WebSite Version 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    
     <div class="container">
-        <header>
-            <h1>Ethan Bennett - CV Version 3</h1>
-            <!--A nav bar that does not work yet but will work later on-->
-            <nav>
-                <ul>
-                    <li><a href="#experience">Professional Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <p>Click Here To See My Progress</p>
-                    <li><a href="index4.html">Springboard CV WebSite Version 4</a></li>
-                </ul>
-            </nav>
-        </header>
-        
         <main>
             <div class="objective">
                 <p>Dynamic and results-driven professional with a diverse background in team leadership, technical proficiency, and culinary expertise. Eager to leverage my strong work ethic, problem-solving skills, and passion for technology to excel in a challenging IT role.</p>
@@ -30,8 +26,8 @@
             <div class="objective">
                 <p>When I'm not knee-deep in code or tinkering with my homelab setup, you can usually find me out in nature, exploring new hiking trails or setting up camp under the stars. I'm always up for an adventure, whether it's mastering the latest industry certifications or fine-tuning my computer skills. Balancing my love for technology with my appreciation for the outdoors keeps me energized and inspired.</p>
             </div>
-            <img src="https://media.licdn.com/dms/image/D5603AQFR56twC1CbiA/profile-displayphoto-shrink_800_800/0/1682454275067?e=1721260800&v=beta&t=A9A5R8yT9DN6U-bqZ5q0L76hrZ281rgkz-gGM-ARF_4" alt="Ethan Bennett Profile Picture">
-            <!--A section for work experience-->
+            <img src="https://media.licdn.com/dms/image/D5603AQFR56twC1CbiA/profile-displayphoto-shrink_800_800/0/1682454275067?e=1721260800&v=beta&t=A9A5R8yT9DN6U-bqZ5q0L76hrZ281rgkz-gGM-ARF_4" alt="Profile Picture">
+            <!-- A section for work experience -->
             <section id="professional-experience">
                 <h2>Professional Experience</h2>
                 <div class="section-title">
@@ -59,52 +55,46 @@
                     <li>Here, I wasn't just assembling; I was sculpting excellence. Every lift, every process, was a brushstroke in the masterpiece of efficiency.</li>
                 </ul>
             </section>
-            <!--A section for projects-->
+            <!-- A section for projects -->
             <section id="projects">
                 <h2>Projects</h2>
+                <ul>
                     <li><strong>PiHole</strong><p>Pi hole running on a rasberypi 3b and mirrored on a docker container for redundancy</p></li>
                     <li><strong>Test Lab</strong><p>Nested Proxmox Hypervisor</p></li>
                     <li><strong>Coding|Self Study</strong><p>Working to attain coding certifications from the odin project, freecode camp, and W3Schools.</p></li>
-                    <li><strong>HomeLab</strong><p>My HomeLab's networking interface runs on a Unifi Dream Machine. With the UDM, I can:</p></li>
-                        <!--A list of uses for my UDM-->
-                        <ol>
-                         <li>Configure and manage VLANs.</li>
-                         <li>Set up firewalls and port forwarding.</li>
-                         <li>Monitor device lifecycle status.</li>
-                         <li>Optimize radio channels for Wi-Fi.</li>
-                         <li>Detect security threats.</li>
-                         <li>Manage user access.</li>
-                         <li>Track local data usage.</li>
-                        </ol>
-                    <li><strong>Tor Snowflake Proxy</strong></li>
-                    <p>I currently run a TOR Snowflake proxy, distinct from a TOR Node or Bridge (which form the critical infrastructure of the TOR Network).The Tor snowflake proxy enables individuals in censored countries, such as China and North Korea, to securely transfer data out anonymously. I deliberately chose this project after extensive research and reading documentation. My motivation was to contribute to a cause that resonated with me: assisting oppressed individuals. Importantly, this task is entirely legal and well-understood.</p>
-                    <li><strong>Windows Admin Center</strong></li>
-                    <p>My Intel NUC serves as the hub for my home system. It hosts the Windows Admin Center and is seamlessly linked to Microsoft Azure. This connection allows me to spin up cloud machines when needed.</p>
+                    <li><strong>HomeLab</strong><p>My HomeLab's networking interface runs on a Unifi Dream Machine. With the UDM, I can:</p>
+                        <!-- A list of uses for my UDM -->
+                        <ul>
+                            <li>Configure and manage VLANs.</li>
+                            <li>Set up firewalls and port forwarding.</li>
+                            <li>Monitor device lifecycle status.</li>
+                            <li>Optimize radio channels for Wi-Fi.</li>
+                            <li>Detect security threats.</li>
+                            <li>Manage user access.</li>
+                            <li>Track local data usage.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Tor Snowflake Proxy</strong><p>I currently run a TOR Snowflake proxy, distinct from a TOR Node or Bridge (which form the critical infrastructure of the TOR Network).The Tor snowflake proxy enables individuals in censored countries, such as China and North Korea, to securely transfer data out anonymously. I deliberately chose this project after extensive research and reading documentation. My motivation was to contribute to a cause that resonated with me: assisting oppressed individuals. Importantly, this task is entirely legal and well-understood.</p></li>
+                    <li><strong>Windows Admin Center</strong><p>My Intel NUC serves as the hub for my home system. It hosts the Windows Admin Center and is seamlessly linked to Microsoft Azure. This connection allows me to spin up cloud machines when needed.</p></li>
                     <li><strong>Deep Packet Inspection Using Wireshark</strong></li>
-                    <p></p>
                     <li><strong>Local LLM AI With Remote Access On a Raspberry PI5</strong></li>
-                    <p></p>
-                  </section>
-                 <!--A Table for my certifications-->
-                  <section id="certifications">
-                    <h2>Certifications</h2>
-                    <table>
-                      <thead>
+                </ul>
+            </section>
+            <!-- A Table for my certifications -->
+            <section id="certifications">
+                <h2>Certifications</h2>
+                <table>
+                    <thead>
                         <tr>
                             <th>From</th>
                             <th>Certification</th>
                             <th>Date Obtained</th>
                         </tr>
-                     </thead>
-                     <tbody>
+                    </thead>
+                    <tbody>
                         <tr>
                             <td>Amazon Web Services (AWS)</td>
                             <td>Cloud Practitioner: Cloud Quest</td>
-                            <td>Apr 2024</td>
-                        </tr>
-                        <tr>
-                            <td>Amazon Web Services (AWS)</td>
-                            <td>AWS Knowledge: Cloud Essentials</td>
                             <td>Apr 2024</td>
                         </tr>
                         <tr>
@@ -157,18 +147,52 @@
                             <td>A+ (1101-1102)</td>
                             <td>WIP</td>
                         </tr>
-                     </tbody>
-                    </table>
-                  </section>
+                    </tbody>
+                </table>
+            </section>
+            <!-- Contact form -->
+             <section id="contact">
+                <h2>Let's connect and create something amazing together!</h2>
+                <form action="#" method="post">
+                   <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                   </div>
+                   <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <div>
+                    <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </section>
         </main>
-<!--A closing section with links to socials, will have images later on-->
-        <footer>
-            <p>Let's connect and create something amazing together!</p>
-            <div>
-                <a href="https://www.linkedin.com/in/ethan-bennett-801aa8172/">Visit Ethan Bennett's LinkedIn Profile</a>
-                <a href="https://github.com/TheGooeyOne">Visit Ethan Bennett's GitHub Profile</a>
-            </div>
-        </footer>
     </div>
+    <!-- A closing footer section -->
+    <footer>
+        <div>
+            <a href="https://www.linkedin.com/in/ethan-bennett-801aa8172/">
+                <img src="https://images.marketpath.com/9dda7041-2870-4a96-bf1e-dd8342e86e7c/image/aadc7c94-56e9-4f81-987a-8bbba00cda02/linkedinupdate.png" alt="LinkedIn Icon" class="icon">
+                Visit Ethan Bennett's LinkedIn Profile
+            </a>
+            <a href="https://github.com/TheGooeyOne">
+                <img src="https://www.freeiconspng.com/thumbs/github-icon/github-icon-9.png" alt="GitHub Icon" class="icon" >
+                Visit Ethan Bennett's GitHub Profile
+            </a>
+        </div>
+        <div class="cube-container">
+            <div class="cube left"></div>
+            <div class="cube right"></div>
+        </div>
+    </footer>
 </body>
 </html>
