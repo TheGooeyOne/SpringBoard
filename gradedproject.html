@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+</head>
+<body>
+    <!-- Main container for the resume content -->
+    <div class="container">
+        <!-- Header section with profile picture, name, and contact info -->
+        <header class="header">
+            <div class="profile-picture">
+                <img src="https://media.licdn.com/dms/image/D5635AQGpokfX-NIJww/profile-framedphoto-shrink_200_200/0/1711555266545?e=1722016800&v=beta&t=29XOs3VzQtFp9W-0J803ztD_JbV9g7gfczym2ITCclg" alt="Profile Picture">
+            </div>
+            <h1 class="name">Ethan Bennett</h1>
+            <div class="contact-info">
+                <p>Kennewick, WA 99336</p>
+                <p>(541) 890-6612</p>
+                <p>Simplisticbenny@gmail.com</p>
+            </div>
+        </header>
+        <br>
+
+        <!-- Brief professional summary -->
+        <section class="summary">
+            <p>Skilled in diverse installation, maintenance, and repair tasks across various industries. Possess hands-on experience in troubleshooting complex issues and delivering efficient solutions. Demonstrated ability to adapt quickly to new technologies and methodologies with strong problem-solving skills. Improved operational efficiency and equipment longevity through proactive maintenance strategies.</p>
+        </section>
+        <br>
+
+        <!-- Professional experience section -->
+        <section class="professional-experience">
+            <h2>PROFESSIONAL EXPERIENCE</h2>
+            <!-- Job at Amazon Web Services -->
+            <div class="job">
+                <h3>Amazon Web Services (AWS), Network Deployment Technician</h3>
+                <p>Umatilla, OR <br> November 2023 - Current</p>
+                <ul>
+                    <li>Oversee and manage network deployment projects across multiple AWS data centers in the PDX region. Acting in a leadership capacity.</li>
+                    <li>Manage vendors to ensure adherence to industry standards and meet Service Level Agreements (SLAs)</li>
+                    <li>Using change management best practices</li>
+                    <li>Orchestrate and execute the physical and logical turn up, and validation of AWS network infrastructure</li>
+                </ul>
+            </div>
+            <!-- Job at Intel, Corp. -->
+            <div class="job">
+                <h3>Intel, Corp. Data Center Technician</h3>
+                <p>Hillsboro, OR <br> March 2023 - November 2023</p>
+                <ul>
+                    <li>Utilized JIRA, CLI, and GitHub to complete repair and update requests for Intel Linux servers including, CPU, Network, OS, and BIOS requests</li>
+                    <li>Updated system hardware based on requests including DIMM, CPU, PCH, NIC, Motherboard, Fan</li>
+                    <li>Rack and Stack, Network Cabling</li>
+                    <li>DNS, DHCP, Remote User, SSH, SOL, Pool Management, Over Network Firmware MultiFlash</li>
+                </ul>
+            </div>
+            <!-- Job at UST Global -->
+            <div class="job">
+                <h3>UST Global Semiconductor Validation Technician</h3>
+                <p>Hillsboro, OR</p>
+                <ul>
+                    <li>Performed validation tests on new products to ensure accuracy and quality standards were met.</li>
+                    <li>Provided technical support and guidance during production runs to ensure compliance with validated protocols.</li>
+                    <li>Analyzed test results to identify problems or areas of improvement in the production process.</li>
+                    <li>Documented any changes made to existing systems or processes due to validation tests performed.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education section -->
+        <section class="education">
+            <h2>EDUCATION</h2>
+            <!-- Linn-Benton Community College -->
+            <div class="education-item">
+                <h3>Linn-Benton Community College</h3>
+                <p>Bachelor of Science (concentration: Computer Science) in progress <br> Corvallis, OR <br> February 2020</p>
+            </div>
+            <!-- Springboard Software Development BootCamp -->
+            <div class="education-item">
+                <h3>Springboard Software Development BootCamp</h3>
+                <p>Developing skills in Dom Manipulation, Interactive Web Design, Html, CSS, Java, Node.js and other coding languages. <br> Online <br> April 2024</p>
+            </div>
+            <!-- Cybersecurity Self Study -->
+            <div class="education-item">
+                <h3>Cybersecurity Self Study</h3>
+                <p>Developing skills in networking and cybersecurity through ACI Learning and IT Pro TV working on ComptiaNet+, CybSec+, CCNA, CEH, SSCP, CISA, CISSP, CISM, CASP, CCNP</p>
+            </div>
+        </section>
+
+        <!-- Additional skills and certifications section -->
+        <section class="additional-skills">
+            <h2>ADDITIONAL SKILLS</h2>
+            <h3>Certifications:</h3>
+            <table class="certifications-table">
+                <tr>
+                    <td>Google IT Support (in progress)</td>
+                    <td>CompTIA ITF+ (in progress)</td>
+                    <td>CompTIA A+ (in progress)</td>
+                </tr>
+                <tr>
+                    <td>Forklift Certified</td>
+                    <td>AWS Cloud Quest: Cloud Practitioner</td>
+                    <td>AWS Educate: Getting Started With Compute</td>
+                </tr>
+                <tr>
+                    <td>AWS Educate: Getting Started With Databases</td>
+                    <td>AWS Educate: Getting Started With Networking</td>
+                    <td>AWS Educate: Getting Started With Security</td>
+                </tr>
+                <tr>
+                    <td>AWS Educate: Getting Started With Serverless</td>
+                    <td>AWS Educate: Getting Started With Storage</td>
+                    <td>AWS Educate: Introduction to Cloud 101</td>
+                </tr>
+                <tr>
+                    <td>AWS Educate: Machine Learning Foundations</td>
+                    <td>AWS Educate: Web Builder</td>
+                    <td>AWS Knowledge: Amazon Braket</td>
+                </tr>
+                <tr>
+                    <td>AWS Knowledge: Cloud Essentials</td>
+                    <td>AWS Partner: Cloud Economics Accreditation</td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- A section for projects -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>PiHole</strong><p>Pi hole running on a rasberypi 3b and mirrored on a docker container for redundancy</p></li>
+                <li><strong>Test Lab</strong><p>Nested Proxmox Hypervisor</p></li>
+                <li><strong>Coding|Self Study</strong><p>Working to attain coding certifications from the odin project, freecode camp, and W3Schools.</p></li>
+                <li><strong>HomeLab</strong><p>My HomeLab's networking interface runs on a Unifi Dream Machine. With the UDM, I can:</p>
+                    <!-- A list of uses for my UDM -->
+                    <ul>
+                        <li>Configure and manage VLANs.</li>
+                        <li>Set up firewalls and port forwarding.</li>
+                        <li>Monitor device lifecycle status.</li>
+                        <li>Optimize radio channels for Wi-Fi.</li>
+                        <li>Detect security threats.</li>
+                        <li>Manage user access.</li>
+                        <li>Track local data usage.</li>
+                    </ul>
+                </li>
+                <li><strong>Tor Snowflake Proxy</strong><p>I currently run a TOR Snowflake proxy, distinct from a TOR Node or Bridge (which form the critical infrastructure of the TOR Network).The Tor snowflake proxy enables individuals in censored countries, such as China and North Korea, to securely transfer data out anonymously. I deliberately chose this project after extensive research and reading documentation. My motivation was to contribute to a cause that resonated with me: assisting oppressed individuals. Importantly, this task is entirely legal and well-understood.</p></li>
+                <li><strong>Windows Admin Center</strong><p>My Intel NUC serves as the hub for my home system. It hosts the Windows Admin Center and is seamlessly linked to Microsoft Azure. This connection allows me to spin up cloud machines when needed.</p></li>
+                <li><strong>Deep Packet Inspection Using Wireshark</strong></li>
+                <li><strong>Local LLM AI With Remote Access On a Raspberry PI5</strong></li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- A closing footer section -->
+    <footer>
+        <p>Let's connect and create something amazing together!</p>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/ethan-bennett-801aa8172/">
+                <img src="https://images.marketpath.com/9dda7041-2870-4a96-bf1e-dd8342e86e7c/image/aadc7c94-56e9-4f81-987a-8bbba00cda02/linkedinupdate.png" alt="LinkedIn Icon" class="icon">
+                Visit Ethan Bennett's LinkedIn Profile
+            </a>
+            <a href="https://github.com/TheGooeyOne">
+                <img src="https://www.freeiconspng.com/thumbs/github-icon/github-icon-9.png" alt="GitHub Icon" class="icon">
+                Visit Ethan Bennett's GitHub Profile
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

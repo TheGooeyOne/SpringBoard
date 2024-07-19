@@ -1,0 +1,253 @@
+/* Basic reset for consistent styling across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting a background color and font styles for the body */
+body {
+    font-family: 'Poppins', sans-serif; /* Updated font */
+    background-color: #f0f4f8; /* Light, neutral background for contrast */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main container styling */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    background: linear-gradient(135deg, #ffffff 0%, #e2e5e8 100%); /* Subtle gradient background */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Header section styling with Flexbox */
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px solid #004d99; /* Deep blue for strong visual impact */
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+/* Profile picture styling */
+.profile-picture img {
+    border-radius: 50%;
+    width: 180px; /* Increased size */
+    height: 180px; /* Increased size */
+    border: 5px solid #004d99; /* Matching border for consistency */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-picture img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Name styling */
+.name {
+    flex: 1;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 600; /* Bold for emphasis */
+    color: #004d99; /* Deep blue for prominence */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact info styling */
+.contact-info {
+    text-align: right;
+    color: #333;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 40px;
+}
+
+/* Job section styling */
+.job h3 {
+    color: #004d99; /* Deep blue for section headers */
+    margin-top: 15px;
+    font-size: 1.8em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.job p, .job ul {
+    margin-left: 20px;
+}
+
+/* Table styling for certifications */
+.certifications-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.certifications-table th, .certifications-table td {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.certifications-table th {
+    background-color: #004d99; /* Deep blue for table headers */
+    color: #fff;
+    font-weight: bold;
+}
+
+.certifications-table td {
+    background-color: #ffffff; /* Crisp white for data cells */
+}
+
+/* Projects section styling */
+#projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#projects li {
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #e2e5e8 0%, #ffffff 100%); /* Subtle gradient for each project item */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects li:hover {
+    background: linear-gradient(135deg, #ffffff 0%, #d9e2e8 100%); /* Light blue on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#projects li ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Footer section styling */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 5px solid #004d99; /* Consistent deep blue for footer border */
+    color: #333;
+}
+
+/* Footer links styling */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* Increased gap for better spacing */
+    margin-top: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #004d99;
+    font-weight: 600; /* Bold for emphasis */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #002f6c; /* Darker blue for hover effect */
+    transform: scale(1.1);
+}
+
+.footer-links a .icon {
+    width: 100px; /* Increased size for better visibility */
+    height: 100px; /* Increased size for better visibility */
+    transition: transform 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-links a:hover .icon {
+    transform: rotate(360deg); /* Icon rotation for hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .profile-picture img {
+        width: 150px; /* Adjusted size for smaller screens */
+        height: 150px; /* Adjusted size for smaller screens */
+    }
+
+    .name {
+        font-size: 2.5em;
+    }
+
+    .job h3, .section h2 {
+        font-size: 1.5em;
+    }
+
+    .certifications-table th, .certifications-table td {
+        padding: 12px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-links a {
+        margin-bottom: 20px;
+    }
+}
+
+/* Further responsiveness for smaller devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    .profile-picture img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name {
+        font-size: 2em;
+    }
+
+    .contact-info p {
+        font-size: 1em;
+    }
+
+    .job h3, .section h2 {
+        font-size: 1.2em;
+    }
+
+    .certifications-table th, .certifications-table td {
+        padding: 10px;
+    }
+
+    .footer-links {
+        gap: 20px;
+    }
+
+    .footer-links a .icon {
+        width: 80px;
+        height: 80px;
+    }
+}
